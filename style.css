@@ -28,6 +28,7 @@ h1{
     margin: 0 auto;
     padding: 24px;
     background-color: #1A0B2E;
+    border-bottom: 1px solid rgba(65, 37, 103, 1);
 }
 .menu a{
     text-decoration: none;
@@ -158,4 +159,129 @@ h1{
     height: 44px;
     margin-left: 8px;
     cursor: pointer;
+}
+/* About section */
+.about{
+    /* border: 2px solid red; */
+    background-color: #1A0B2E;
+    width: 100%px;
+    height: 647px;
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    margin-bottom: 80px;
+    margin-top: 50px;
+    border-bottom: 1px solid rgba(65, 37, 103, 1);
+}
+.about-content .text{
+    width: auto;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+ .about-content .text{
+    width: 1200px;
+    height: 222px;
+ }
+ .about-content .text h3{
+    color: #FFFFFF;
+    font-family: Bold;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+ }
+ .about-content .text p{
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #FFFFFF;
+ }
+ /* About card */
+ .about-card{
+    text-align: center;
+    gap: 80px;
+    width: 1200px;
+    height: 95px;
+    margin-top: 80px;
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+ }
+ 
+ .card h4{
+    color: #00FF88;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+ }
+ .card h3{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+ }
+ /* Choose Techwave */
+
+.tech-wave{
+    background-color: #230E3D;
+    width: 1600px;
+    height:900px;
+}
+.container>*{
+    background-color: #351165;
+    padding: 30px;
+    color: #FFFFFF;
+    border-radius: 15px;
+
+}
+
+.grid-title{
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 3rem;
+}
+#sidebar{
+    grid-area: sidebar;
+}
+main{
+    grid-area: main;
+}
+#location{
+    grid-area: location;
+}
+#resource{
+    grid-area: resource;
+}
+footer{
+    grid-area: footer;
+}
+.container{
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 120px;
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    "sidebar main main main"
+    "sidebar location location location"
+    "footer footer footer resource";
+}
+/* Featured EPISODE */
+.featured{
+    background-color: #1A0B2E;
+    width: 1600px;
+    height: 1276px;
 }
