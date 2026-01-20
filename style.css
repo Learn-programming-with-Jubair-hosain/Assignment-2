@@ -23,12 +23,17 @@ h1{
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 1600px;
     height: 92px;
     margin: 0 auto;
     padding: 24px;
     background-color: #1A0B2E;
     border-bottom: 1px solid rgba(65, 37, 103, 1);
+}
+.navbar>span{
+    margin-right: 5px;
+    display: none;
 }
 .menu a{
     text-decoration: none;
@@ -235,7 +240,7 @@ h1{
 .tech-wave{
     background-color: #230E3D;
     width: 1600px;
-    height:900px;
+    height:1100px;
 }
 .container>*{
     background-color: #351165;
@@ -409,7 +414,6 @@ footer{
      border: none;
      border-radius: 40px;
      background-color: #250D44;
-     
      margin: 0 auto;
 }
 .content {
@@ -507,4 +511,30 @@ footer{
     margin-top: 10px;
     opacity: 60%;
     text-align: center;
+}
+
+
+/* responsive code */
+@media  screen and (max-width:576px){
+    .menu .content{
+        display: none;
+    }
+    .navbar>span{
+    margin-right: 5px;
+    display: inline;
+}
+.banner,
+.banner-container,
+.banner-content,
+.banner-image,
+.bg-img,
+.center-img,
+.title,
+.btn-section{
+    grid-template-columns: repeat(2, 1fr);
+}
+.tech-wave{
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+}
 }
